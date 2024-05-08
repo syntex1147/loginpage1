@@ -1,0 +1,24 @@
+.hero {
+    background-image: url('../static/imagine_img4.png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center; /* This vertically centers the content */
+    justify-content: center; /* This horizontally centers the content */
+    color: rgb(255, 255, 255); /* Ensures text is readable on potentially dark backgrounds */
+    text-align: center; /* Centers the text horizontally */
+}
+
+.hero-content {
+    max-width: 600px; /* Limits the width of the text for readability */
+}
+
+.hero h2, .hero h3 {
+    color: #0066ff; /* Tomato color for headings */
+}
+
+.hero p {
+    color: #0066ff; /* White color for paragraphs */
+}
+

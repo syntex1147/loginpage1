@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Mental Health Tracking Tool</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>MHT Tool</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/index.html#contacts">Contacts</a></li>
+            <li><a href="loginsignup.html" role="button">Login/Signup</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div>
+            <section aria-label="Login">
+                <article>
+                    <hgroup>
+                        <h2>Login</h2>
+                        <h3>Secure Access to Your Dashboard</h3>
+                    </hgroup>
+                    <form action="/login" method="post">
+                        <input type="text" id="username" name="username" placeholder="Username" aria-label="Username" required />
+                        <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" required />
+                        <button type="submit">Login</button>
+                    </form>
+                </article>
+            </section>
+            <section aria-label="Sign Up">
+                <article>
+                    <hgroup>
+                        <h2>Sign Up</h2>
+                        <h3>Create Your Account</h3>
+                    </hgroup>
+                    <form action="/signup" method="post">
+                        <input type="text" id="newusername" name="newusername" placeholder="Choose a Username" aria-label="New Username" required />
+                        <input type="email" id="email" name="email" placeholder="Email Address" aria-label="Email" required />
+                        <input type="password" id="newpassword" name="newpassword" placeholder="Create a Password" aria-label="New Password" required />
+                        <button type="submit">Register</button>
+                    </form>
+                </article>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </footer>
+</body>
+</html>

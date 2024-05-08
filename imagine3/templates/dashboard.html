@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Stem Cell Research</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<style>
+    
+</style>   
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html#contacts">Contacts</a></li>
+                <li><a href="loginsignup.html" role="button">Login/Signup</a></li>
+                <li><a href="dashboard.html" >Doctor's Portal</a></li>
+                <li><a href="dashboard1.html" >Patient's Portal</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Tail A.I. - Doctor's Portal</h1>
+            <p>Welcome to the TAIL AI doctor portal! Please upload the EEG data of the patient for most accurate analysis. (recorded with simple electrode readers), a voice recording of the patient saying anything (or tell them to read this prompt: The sly brown fox jumped over the hungry camel), and finally, questionnaire scores. 
+                (EEG Upload, Voice upload, Tabular upload)
+                </p>
+            <div class="upload-section">
+                <label for="file-upload" class="custom-file-upload">
+                    Upload files below
+                </label>
+                <input id="file-upload" type="file" />
+            </div>'
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="submitBtn" style="background-color: blue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            </div>
+            <div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 1px solid black; padding: 20px; border-radius: 5px; z-index: 1000;">
+                <p>Popup content goes here...</p>
+                <button onclick="closePopup()" style="padding: 5px 10px; background-color: red; color: white; border: none; cursor: pointer;">Close</button>
+            </div>
+            <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 999;"></div>
+            
+            <div class="upload-section">
+                <label for="file-upload" class="custom-file-upload">
+                    Upload Questionnaire Data CSV
+                </label>
+                <input id="file-upload" type="file" />
+            </div>'
+
+            <h3>Outputs and Use</h3>
+            <p>Patient Progression: The chatbot will act as a therapist, and update you with any significant progressions. Whether this means more physical meetings, or medicine administration, the use of the chatbot is to give you insights of the patient. </p>
+            <p>Media Upload and Diagnosis: Our model takes in a .wav file (audio), a .mat file (eeg), and text input to diagnose the patient, and create the case-specific chatbot. Our model is very accurate, but is only used for initial setup and diagnostics (it can be used for intermediate checkups if needed). </p>
+            <h3>Multi-Headed CNN Model</h3>
+            <img src="../static/model1.png" alt="Healthcare" />
+            <p>Multi-headed CNN, or Multi-headed Convolutional Neural Networks, have been extremely useful for multimodal data and image analysis. We have adapted the various types of data in our process (eeg, questions, audio) into tabular and image data through the Mel spectrogram and Fourier transform. </p>
+            <p>The three branches of this complex ML architecture allow the model to analyze all three forms of patient input, and accurately predict mental-health conditions for patients. The use of a CNN approach allows for the intricate patterns and features of eeg/voice image data to be analyzed, yielding greater prediction/diagnosis accuracies. The model is trained on a large dataset for audio/eeg/questions, for 5 ethnicities from 2 countries. The chatbot is also trained on a large vector database full of medical/psychological data, so the chatbot LLM can accurately emulate a real therapist. </p>
+        </div>
+    </div>
+</body>
+
+</html>
